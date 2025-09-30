@@ -32,5 +32,6 @@ async function generateContent(prompt){
   const result=await model.generateContent(prompt);
   return result.response.text();
 }
+console.log("Loaded Gemini API Key:", process.env.GOOGLE_GEMINI_KEY.length); 
 
 module.exports=generateContent
