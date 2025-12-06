@@ -3,7 +3,7 @@ require("dotenv").config();
 
 // Initialize Gemini
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEMINI_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", 
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash", 
   systemInstruction: `You are the most advanced AI Code Reviewer — trusted by top engineers.
 
 Your mission: Analyze and review code with precision, like a world-class developer. Focus on what matters most:
